@@ -1,0 +1,40 @@
+<div
+    data-c-background="c2(100)"
+    data-c-padding="tb(.5)">
+    <div data-c-container="base(large, center)">
+        <p data-c-color="white">< <a href="$ROOT/">Return to the demo homepage.</a></p>
+    </div>
+</div>
+<header data-c-overlay="black(80)" style="background-image: url('https://images.unsplash.com/photo-1516212400960-67b759b87a9e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80')">
+    <div 
+        data-c-container="base(large, center)" 
+        data-c-padding="bottom(3)">
+        <h1 
+            data-c-heading="h1" 
+            data-c-padding="top(3)" 
+            data-c-margin="bottom(1)">{{ title }}</h1>
+        <p 
+            data-c-margin="bottom(2)"
+            data-c-color="white">{{ subtitle }}</p>
+        <div data-c-grid="gutter(all, 1)">
+            <div data-c-grid-item="base(1of1) tl(1of2)">
+                <nav 
+                    aria-label="breadcrumb" 
+                    data-c-breadcrumbs
+                    data-c-color="white">
+                    <ol>
+                        <li>
+                            <a href="https://talent.canada.ca" title="Return to Talent Cloud.">Talent Cloud</a><i>/</i>
+                        </li>
+                        <li>
+                            <a href="$ROOT/" title="Return to the demo homepage.">Credentials Demo</a><i>/</i>
+                        </li>
+                        <li>
+                            <span aria-current="page">{{ number }}: {{ breadcrumb }}</span><i>/</i>
+                        </li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>

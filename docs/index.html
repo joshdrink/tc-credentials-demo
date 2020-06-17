@@ -1,41 +1,20 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
     <head>
-
         
-        <title>Clone: Playground</title>
-        
+        <title>Talent Cloud: Verified Credential Demo</title>
         
         <meta charset="utf-8" />
-
         
-        <meta
-            http-equiv="X-UA-Compatible"
-            content="IE=edge">
-
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         
-        <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1.0">
-
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
-        <link
-            href="https://fonts.googleapis.com/css?family=Euphoria+Script|Open+Sans:400,400i,600,600i,800,800i&amp;subset=latin-ext"
-            rel="stylesheet">
-
+        <link href="https://fonts.googleapis.com/css?family=Euphoria+Script|Open+Sans:400,400i,600,600i,800,800i&amp;subset=latin-ext" rel="stylesheet">
         
-        <link
-            href="https://fonts.googleapis.com/icon?family=Material+Icons"
-            rel="stylesheet">
-
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         
-        <link 
-            async 
-            href="/css/app.css"
-            rel="stylesheet">
-
+        <link async href="/tc-credentials-demo/css/app.css" rel="stylesheet">
         
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -44,31 +23,170 @@
         <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#b91d47">
         <meta name="msapplication-TileColor" content="#b91d47">
         <meta name="theme-color" content="#b91d47">
-
     </head>
-
     
     <body data-clone>
-
-        <div class="pg-hero">
-            <div data-c-radius="rounded">
-                <div data-c-background="black(100)" data-c-color="white" data-c-padding="all(double)">
-                    <h1 data-c-font-size="h1" data-c-margin="bottom(normal)" data-c-font-weight="bold">Welcome to Clone Playground!</h1>
-                    <p data-c-margin="bottom(half)">Playground gives you access to everything you need to have some fun prototyping things with Clone. You can stick to regular HTML, or you can dive into the deep end and build some fun stuff with JavaScript, Sass, and Twig.</p>
-                    <p>Take a peek inside <span data-c-font="mono">app/twig/index.twig</span> to get started!</p>
+        <div
+            data-c-background="c2(100)"
+            data-c-padding="tb(.5)">
+            <div data-c-container="base(large, center)">
+                <p data-c-color="white">< <a href="https://talent.canada.ca">Return to Talent Cloud</a></p>
+            </div>
+        </div>
+        <header data-c-overlay="black(80)" style="background-image: url('https://images.unsplash.com/photo-1516212400960-67b759b87a9e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80')">
+            <div 
+                data-c-container="base(large, center)" 
+                data-c-padding="bottom(3)">
+                <h1 
+                    data-c-heading="h1" 
+                    data-c-padding="top(3)" 
+                    data-c-margin="bottom(2)">Talent Cloud: Verified Credentials Demo</h1>
+                <div data-c-grid="gutter(all, 1)">
+                    <div data-c-grid-item="base(1of1) tl(1of2)">
+                        <nav 
+                            aria-label="breadcrumb" 
+                            data-c-breadcrumbs
+                            data-c-color="white">
+                            <ol>
+                                <li>
+                                    <a href="https://talent.canada.ca" title="Return to Talent Cloud.">Talent Cloud</a><i>/</i>
+                                </li>
+                                <li>
+                                    <span aria-current="page">Credentials Demo</span><i>/</i>
+                                </li>
+                            </ol>
+                        </nav>
+                    </div>
                 </div>
-                <div class="pg-alert" data-c-color="white" data-c-padding="tb(normal) rl(double)">
-                    <p>Need a refresher on how to use Clone? <a href="https://designwithclone.ca/" title="Open the Clone documentation in a new window or tab." target="_blank">Check out the docs</a>.</p>
+            </div>
+        </header>
+        <div 
+            data-c-padding="tb(3)"
+            class="flourish">
+            <img src="/tc-credentials-demo/img/maple-leaf.svg" alt="The Canadian maple leaf.">
+            <div data-c-container="base(large, center)">
+                <div data-c-grid="gutter(all, 1)">
+                    <div data-c-grid-item="base(1of1)">
+                        <div data-c-container="base(medium, left)">
+                            <p data-c-margin="bottom(1)">Welcome to the demo. This prototype highlights a simplified version of what potential verified skills might look like in a Talent Cloud context. Below is a menu that allows you to jump to any step you'd like to view. To start from the beginning, click on Step 01.</p>
+                        </div>
+                    </div>
+                    <div data-c-grid-item="base(1of1) tl(1of3) equal-col">
+                        <a 
+                            data-c-card 
+                            data-c-display="block"
+                            data-c-background="white(100)"
+                            data-c-radius="rounded"
+                            data-c-padding="all(1)"
+                            class="tc-index-card"
+                            href="/tc-credentials-demo/01-create-skill"
+                            title="Visit step 1 of the process.">
+                            <p data-c-color="gray">Step 01</p>
+                            <p 
+                                data-c-font-size="h3"
+                                data-c-font-weight="bold"
+                                data-c-font-style="underline"
+                                data-c-color="black"
+                                data-c-margin="top(.5)">Create a Skill</p>
+                            <p 
+                                data-c-color="c3"
+                                data-c-margin="top(.5)">User Group: Applicant</p>
+                            <p 
+                                data-c-margin="top(1)"
+                                data-c-color="black">This UI showcases what it would be like for an applicant to create and submit a very basic skill credential. Please note only the "Design Research" skill is functional for demo purposes.</p>
+                        </a>
+                    </div>
+                    <div data-c-grid-item="base(1of1) tl(1of3) equal-col">
+                        <a 
+                            data-c-card 
+                            data-c-display="block"
+                            data-c-background="white(100)"
+                            data-c-radius="rounded"
+                            data-c-padding="all(1)"
+                            class="tc-index-card"
+                            href="/tc-credentials-demo/02-verify-skill"
+                            title="Visit step 2 of the process.">
+                            <p data-c-color="gray">Step 02</p>
+                            <p 
+                                data-c-font-size="h3"
+                                data-c-font-weight="bold"
+                                data-c-font-style="underline"
+                                data-c-color="black"
+                                data-c-margin="top(.5)">Verify a Skill</p>
+                            <p 
+                                data-c-color="c3"
+                                data-c-margin="top(.5)">User Group: Hiring Manager</p>
+                            <p 
+                                data-c-margin="top(1)"
+                                data-c-color="black">This UI showcases how managers would indicate the assessment method used to verify the applicant's skill claim and subsequently "verify" the credential as valid. Please note only the "Design Research" skill is functional for demo purposes.</p>
+                        </a>
+                    </div>
+                    <div data-c-grid-item="base(1of1) tl(1of3) equal-col">
+                        <a 
+                            data-c-card 
+                            data-c-display="block"
+                            data-c-background="white(100)"
+                            data-c-radius="rounded"
+                            data-c-padding="all(1)"
+                            class="tc-index-card"
+                            href="/tc-credentials-demo/03-view-verified-skill"
+                            title="Visit step 3 of the process.">
+                            <p data-c-color="gray">Step 03</p>
+                            <p 
+                                data-c-font-size="h3"
+                                data-c-font-weight="bold"
+                                data-c-font-style="underline"
+                                data-c-color="black"
+                                data-c-margin="top(.5)">View Verified Skills</p>
+                            <p 
+                                data-c-color="c3"
+                                data-c-margin="top(.5)">User Group: Applicant</p>
+                            <p 
+                                data-c-margin="top(1)"
+                                data-c-color="black">This UI showcases how applicants would perceive their skill once it had been validated. Please note that viewing details of a verified assessment are not functional for demo purposes.</p>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
-
+        <footer data-c-padding="tb(2)" data-c-border="top(thin, solid, gray)">
+    <div data-c-container="base(large, center)">
+        <div data-c-grid="gutter(all, 1) middle">
+            <div 
+                data-c-grid-item="base(1of1) tl(2of3)"
+                data-c-align="base(center) tl(left)">
+                <ul>
+                    <li>
+                        <a href="mailto:talent.cloud-nuage.de.talents@tbs-sct.gc.ca" title="Email us with feedback about Talent Cloud.">Feedback</a>
+                    </li>
+                    <li>
+                        <a href="https://talent.canada.ca/en/tos" title="View Talent Cloud's terms and conditions.">Terms and Conditions</a>
+                    </li>
+                    <li>
+                        <a href="https://talent.canada.ca/en/privacy" title="View Talent Cloud's privacy policy.">Privacy Policy</a>
+                    </li>
+                    <li>
+                        <a href="https://canada.ca" title="Visit Canada.ca.">Canada.ca</a>
+                    </li>
+                </ul>
+                <p 
+                    data-c-font-size="small"
+                    data-c-margin="top(1)"
+                    data-c-color="gray">Last Updated: YYYY/MM/DD</p>
+            </div>
+            <div 
+                data-c-grid-item="base(1of1) tl(1of3)"
+                data-c-align="base(center) tl(right)">
+                <a class="logo" href="https://canada.ca/" title="Visit Canada.ca">
+                    <img src="/tc-credentials-demo/img/logo-canada-color.png" alt="The logotype for the government of Canada.">
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
         
-        <script src="/js/clone/clone.min.js"></script>
-
+        <script src="/tc-credentials-demo/js/clone/clone.min.js"></script>
         
-        <script src="/js/app.js"></script>
-
+        <script src="/tc-credentials-demo/js/app.js"></script>
     </body>
-
 </html>

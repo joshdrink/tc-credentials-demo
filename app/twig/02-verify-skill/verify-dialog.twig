@@ -1,0 +1,94 @@
+<div aria-hidden="true" aria-describedby="example-dialog-01-description" aria-labelledby="example-dialog-01-title" data-c-dialog data-c-dialog-escapable data-c-dialog-id="example-dialog-01" data-c-padding="tb(2)" role="dialog">
+    <div data-c-background="white(100)" data-c-radius="rounded" data-c-margin="bottom(2)">
+        <div data-c-background="c1(100)" data-c-padding="tb(1) right(3) left(1)" data-c-border="bottom(thin, solid, black)">
+            <h5 
+                data-c-color="white" 
+                data-c-font-size="h4" 
+                id="example-dialog-01-title" 
+                data-c-font-weight="bold"
+                data-c-dialog-focus>Verify Jennifer in Design Research</h5>
+            <p data-c-color="white" data-c-font-size="h5" data-c-margin="top(.5)">Please indicate the assessment method you used as well as any suplementary details.</p>
+            <button data-c-dialog-action="close" data-c-dialog-id="example-dialog-01" type="button">
+                <span data-c-color="white" data-c-font-weight="bold" data-c-font-size="h3">x</span>
+            </button>
+        </div>
+        <div data-c-border="bottom(thin, solid, black)" data-c-padding="all(1)">
+            <form id="example-dialog-01-description">
+                <div data-c-grid="gutter(all, 1)">
+                    <div 
+                        data-c-input="select" 
+                        data-c-grid-item="base(1of2)">
+                        <label for="SEL2">Select an Assessment</label>
+                        <span>Required</span>
+                        <div>
+                            <i class="material-icons">
+                                arrow_drop_down
+                            </i>
+                            <select required id="SEL2">
+                                <option disabled>Select an assessment...</option>
+                                <option>Interview</option>
+                                <option selected>Written Exam</option>
+                                <option>Group Exercise</option>
+                                <option>Digital Exam</option>
+                            </select>
+                        </div>
+                        <span>This input has an error.</span>
+                    </div>
+                    <div 
+                        data-c-input="select" 
+                        data-c-grid-item="base(1of2)">
+                        <label for="SEL3">Level Assessed:</label>
+                        <span>Required</span>
+                        <div>
+                            <i class="material-icons">
+                                arrow_drop_down
+                            </i>
+                            <select required id="SEL3">
+                                <option disabled>Select a level...</option>
+                                <option>Beginner</option>
+                                <option selected>Intermediate</option>
+                                <option>Advanced</option>
+                                <option>Expert</option>
+                            </select>
+                        </div>
+                        <span>This input has an error.</span>
+                    </div>
+                </div>
+                <div 
+                    data-c-input="textarea"
+                    data-c-grid-item="base(1of1)">
+                    <label for="TA2">Please describe the assessment and outcomes:</label>
+                    <span>Required</span>
+                    <div>
+                        <textarea id="TA2" required>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec imperdiet hendrerit mauris vitae lacinia. Mauris sollicitudin porta lorem, et consequat ipsum. Nulla vel purus eu metus tristique tincidunt. Proin in fringilla ipsum, a fermentum quam. Praesent finibus massa urna, eu scelerisque mauris sodales nec.</textarea>
+                    </div>
+                    <span>This input has an error.</span>
+                </div>
+            </form>
+        </div>
+        <div data-c-padding="all(1)">
+            <div data-c-grid="gutter(all, 1) middle">
+                <div data-c-grid-item="base(1of2)">
+                    <button data-c-button="outline(slow)" data-c-radius="rounded" data-c-dialog-action="close" data-c-dialog-id="example-dialog-01">
+                        Cancel
+                    </button>
+                </div>
+                <div data-c-grid-item="base(1of2)" data-c-alignment="base(right)">
+                    {# David: Same idea here - I used an anchor for transition purposes but functionally you'll probably want a button. #}
+                    {# <button 
+                        data-c-button="solid(go)" 
+                        data-c-radius="rounded" 
+                        data-c-dialog-action="close" 
+                        data-c-dialog-id="example-dialog-01">
+                        Submit Verification
+                    </button> #}
+                    <a 
+                        href="$ROOT/02-verify-skill/verified#skill" 
+                        title="Save and submit this skill."
+                        data-c-button="solid(go)" 
+                        data-c-radius="rounded">Submit Verification</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
