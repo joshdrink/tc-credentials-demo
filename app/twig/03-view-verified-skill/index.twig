@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         {# Site Title #}
-        <title>Talent Cloud: Verified Credential Demo</title>
+        <title>Talent Cloud: Skill Assessment Record Demo</title>
         {# Charset #}
         <meta charset="utf-8" />
         {# Compatibility #}
@@ -267,7 +267,7 @@
                                     data-c-radius="rounded" 
                                     role="alert">
                                     <div data-c-padding="all(.5)">
-                                        <p data-c-margin="bottom(.5)" data-c-font-weight="bold"><span data-c-font-size="h4" data-c-margin="right(.25)">(!)</span>Skill Verified!
+                                        <p data-c-margin="bottom(.25)" data-c-font-weight="bold" class="tc-inline-icon"><i class="material-icons" data-c-color="c1" data-c-margin="right(.5)">info</i>Skill Verified!
                                         </p>
                                         <p>Below you'll find the example skill as seen by the applicant after it has been verified through assessment. This is the last step in the demo but if you'd like to return to the homepage, <a href="$ROOT/" title="Proceed to the demo homepage.">proceed to the index</a>.</p>
                                     </div>
@@ -275,7 +275,7 @@
                                 <div data-c-accordion data-c-card data-c-radius="rounded" class="tc-skill-accordion" data-c-margin="top(.25)">
                                     <button aria-expanded="false" data-c-accordion-trigger tabindex="0" type="button">
                                         <div data-c-padding="all(1)">
-                                            <p data-c-font-weight="bold">Design Research</p>
+                                            <p data-c-font-weight="bold" class="tc-inline-icon"><i class="material-icons" data-c-color="go" data-c-margin="right(.5)">verified_user</i>Design Research</p>
                                             <p data-c-margin="top(.25)" data-c-color="go">Claimed, Verified</p>
                                         </div>
                                         <span data-c-visibility="invisible">Click to view...</span>
@@ -360,25 +360,6 @@
                                                             <div data-c-grid-item="base(1of6)">
                                                                 <button data-c-button="solid(c1)" data-c-radius="rounded" data-c-dialog-id="example-dialog-01">View Details</button>
                                                             </div>
-                                                            {# Second Assessment #}
-                                                            <div data-c-grid-item="base(1of6)">
-                                                                <p>Interview</p>
-                                                            </div>
-                                                            <div data-c-grid-item="base(1of6)">
-                                                                <p>Intermediate</p>
-                                                            </div>
-                                                            <div data-c-grid-item="base(1of6)">
-                                                                <p>Franca Middleby</p>
-                                                            </div>
-                                                            <div data-c-grid-item="base(1of6)">
-                                                                <p data-c-color="go">Valid</p>
-                                                            </div>
-                                                            <div data-c-grid-item="base(1of6)">
-                                                                <p data-c-color="go">YYYY/MM/DD</p>
-                                                            </div>
-                                                            <div data-c-grid-item="base(1of6)">
-                                                                <button data-c-button="solid(c1)" data-c-radius="rounded" data-c-dialog-id="example-dialog-01">View Details</button>
-                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -412,7 +393,7 @@
                                 <div data-c-accordion data-c-card data-c-radius="rounded" class="tc-skill-accordion" data-c-margin="top(.25)">
                                     <button aria-expanded="false" data-c-accordion-trigger tabindex="0" type="button">
                                         <div data-c-padding="all(1)">
-                                            <p data-c-font-weight="bold">Database Architecture</p>
+                                            <p data-c-font-weight="bold" class="tc-inline-icon"><i class="material-icons" data-c-color="go" data-c-margin="right(.5)">verified_user</i>Database Architecture</p>
                                             <p data-c-margin="top(.25)" data-c-color="stop">Claimed, Expired</p>
                                         </div>
                                         <span data-c-visibility="invisible">Click to view...</span>
@@ -495,7 +476,26 @@
                                                                 <p data-c-color="stop">YYYY/MM/DD</p>
                                                             </div>
                                                             <div data-c-grid-item="base(1of6)">
-                                                                <button data-c-button="solid(c1)" data-c-radius="rounded" data-c-dialog-id="example-dialog-01">View Details</button>
+                                                                <button data-c-button="solid(c1)" data-c-radius="rounded">View Details</button>
+                                                            </div>
+                                                            {# Second Assessment #}
+                                                            <div data-c-grid-item="base(1of6)">
+                                                                <p>Written Exam</p>
+                                                            </div>
+                                                            <div data-c-grid-item="base(1of6)">
+                                                                <p>Beginner</p>
+                                                            </div>
+                                                            <div data-c-grid-item="base(1of6)">
+                                                                <p>Trisha Jackson</p>
+                                                            </div>
+                                                            <div data-c-grid-item="base(1of6)">
+                                                                <p data-c-color="stop">Expired</p>
+                                                            </div>
+                                                            <div data-c-grid-item="base(1of6)">
+                                                                <p data-c-color="stop">YYYY/MM/DD</p>
+                                                            </div>
+                                                            <div data-c-grid-item="base(1of6)">
+                                                                <button data-c-button="solid(c1)" data-c-radius="rounded">View Details</button>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -535,6 +535,8 @@
             </div>
         </div>
         {% include "../components/footer.twig" %}
+        <div data-c-dialog-overlay></div>
+        {% include "details-dialog.twig" %}
         {# Clone's JavaScript #}
         <script src="$ROOT/js/clone/clone.min.js"></script>
         {# Your JavaScript #}

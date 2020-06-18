@@ -186,6 +186,15 @@ $clone-grid-columns: 12;
             border-left: .5rem solid $clone-c3;
         }
     }
+    .tc-inline-icon {
+        * {
+            vertical-align: middle;
+        }
+        i {
+            font-size: $clone-font-scale-h4;
+            margin-top: -.3rem;
+        }
+    }
     footer {
         background: rgba(150, 150, 150, .1);
         ul {
